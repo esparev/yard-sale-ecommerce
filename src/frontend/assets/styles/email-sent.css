@@ -1,0 +1,14 @@
+.email__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 132px;
+  height: 132px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background-color: var(--text-input-field);
+}
+
+.email__image img {
+  width: 80px;
+}
