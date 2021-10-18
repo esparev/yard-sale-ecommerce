@@ -69,15 +69,15 @@ html {
   margin-bottom: 30px;
 }
 
-.resend {
+.text-button {
   font-size: var(--small);
 }
 
-.resend span {
-  color: var(--black);
+.text-button span {
+  color: var(--very-light-pink);
 }
 
-.resend a {
+.text-button a {
   text-decoration: none;
   color: var(--hospital-green);
 }
