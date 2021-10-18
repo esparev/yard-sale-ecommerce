@@ -1,7 +1,7 @@
 /* VARIABLES */
 :root {
-  --white: #ffff;
-  --black: #0000;
+  --white: #ffffff;
+  --black: #000000;
   --very-light-pink: #909090;
   --text-input-field: #f7f7f7;
   --hospital-green: #acd9b2;
@@ -19,6 +19,21 @@
 
 html {
   font-size: 62.5%;
+}
+
+.title {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: var(--large);
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: normal;
+  font-size: var(--medium);
+  color: var(--very-light-pink);
 }
 
 .label {
@@ -52,4 +67,44 @@ html {
 .login-button {
   margin-top: 14px;
   margin-bottom: 30px;
+}
+
+.resend {
+  font-size: var(--small);
+}
+
+.resend span {
+  color: var(--black);
+}
+
+.resend a {
+  text-decoration: none;
+  color: var(--hospital-green);
+}
+
+.main-section {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.form-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  width: 300px;
+}
+
+.form-logo {
+  display: none;
+  width: 150px;
+  margin-bottom: 48px;
+  justify-self: center;
+}
+
+@media (max-width: 640px) {
+  .form-logo {
+    display: block;
+  }
 }
