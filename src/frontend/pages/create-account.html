@@ -11,7 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/styles/main.css" />
-    <title>YardSale • Login</title>
+    <link rel="stylesheet" href="../assets/styles/new-password.css" />
+    <title>YardSale • Create account</title>
   </head>
   <body>
     <section class="login main-section">
@@ -22,12 +23,19 @@
           class="login__form--logo form-logo"
         />
 
-        <h1 class="login__form--title title">Login</h1>
+        <h1 class="login__form--title title">My account</h1>
         <p class="email__form--subtitle subtitle">
-          Enter now and start exploring!
+          Register and begin your journey!
         </p>
 
         <form action="" class="login__form form">
+          <label for="name" class="label">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="input input-name"
+            placeholder="John Doe"
+          />
           <label for="email" class="label">Email address</label>
           <input
             type="text"
@@ -43,16 +51,15 @@
             placeholder="••••••••••••"
           />
           <button type="submit" class="primary-button login-button">
-            Log in
+            Create account
           </button>
-          <a href="./password-recovery.html">Forgot my password</a>
         </form>
         <button
           type="button"
-          onclick="location.href='./create-account.html'"
+          onclick="location.href='./login.html'"
           class="secondary-button signup-button"
         >
-          Sign up
+          Log in
         </button>
       </section>
     </section>
