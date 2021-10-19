@@ -11,23 +11,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/styles/main.css" />
-    <title>YardSale • Login</title>
+    <link rel="stylesheet" href="../assets/styles/my-account.css" />
+    <title>YardSale • Edit my account</title>
   </head>
   <body>
-    <section class="login main-section">
-      <section class="login__form-container form-container">
-        <img
-          src="../assets/static/logos/logo_yard_sale.svg"
-          alt="YardSale Logo"
-          class="login__form--logo form-logo"
-        />
+    <section class="account main-section">
+      <section class="account__form-container form-container">
+        <h1 class="account__form--title title">My account</h1>
 
-        <h1 class="login__form--title title">Login</h1>
-        <p class="email__form--subtitle subtitle">
-          Enter now and start exploring!
-        </p>
-
-        <form action="" class="login__form form">
+        <form action="" class="account__form form">
+          <label for="name" class="label">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="input input-name"
+            placeholder="John Doe"
+          />
           <label for="email" class="label">Email address</label>
           <input
             type="text"
@@ -35,7 +34,6 @@
             class="input input-email"
             placeholder="example@domain.com"
           />
-
           <label for="password" class="label">Password</label>
           <input
             type="password"
@@ -43,19 +41,14 @@
             class="input input-password"
             placeholder="••••••••••••"
           />
-
-          <button type="submit" class="primary-button login-button">
-            Log in
+          <button
+            type="submit"
+            onclick="location.href='./my-account.html'"
+            class="primary-button account-button"
+          >
+            Save
           </button>
-          <a href="./password-recovery.html">Forgot my password</a>
         </form>
-        <button
-          type="button"
-          onclick="location.href='./create-account.html'"
-          class="secondary-button signup-button"
-        >
-          Sign up
-        </button>
       </section>
     </section>
   </body>
