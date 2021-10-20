@@ -1,0 +1,37 @@
+.menu-mobile {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.menu-mobile ul {
+  list-style: none;
+}
+
+.menu-mobile ul li {
+  margin: 28px 0;
+  font-weight: bold;
+  font-size: var(--small);
+}
+
+.menu-mobile ul li a {
+  color: var(--black);
+}
+
+.menu-mobile .lists__categories li:first-child {
+  text-transform: uppercase;
+}
+
+.menu-mobile .lists__account {
+  border-top: 1px solid var(--very-light-pink);
+}
+
+.menu-mobile .account-info .email {
+  font-weight: normal;
+}
+
+.menu-mobile .account-info .sign-out {
+  color: var(--hospital-green);
+}

@@ -1,0 +1,87 @@
+.menu {
+  width: 128px;
+  height: auto;
+  padding: 12px;
+  border: 1px solid var(--very-light-pink);
+  border-radius: 4px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  padding-bottom: 20px;
+  text-align: end;
+  font-weight: bold;
+  font-size: var(--small);
+}
+
+.menu .lists__categories {
+  display: none;
+}
+
+.menu .account-info {
+  /* padding-top: 20px; */
+  border-top: 1px solid var(--very-light-pink);
+}
+
+.menu ul li a {
+  color: var(--black);
+}
+
+.menu .account-info .email {
+  display: none;
+}
+
+.menu .account-info .sign-out {
+  color: var(--hospital-green);
+}
+
+@media (max-width: 640px) {
+  .menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    border: none;
+  }
+
+  .menu ul li {
+    margin: 20px 0;
+    text-align: start;
+  }
+
+  .menu ul li a {
+    color: var(--black);
+  }
+
+  .menu .lists__categories {
+    display: block;
+  }
+
+  .menu .lists__categories li:first-child {
+    text-transform: uppercase;
+  }
+
+  .menu .lists__account {
+    border-top: 1px solid var(--very-light-pink);
+  }
+
+  .menu .account-info {
+    border: none;
+  }
+
+  .menu .account-info li {
+    margin: 8px 0;
+    padding: 0;
+    border: none;
+  }
+
+  .menu .account-info .email {
+    display: initial;
+    font-weight: normal;
+  }
+}

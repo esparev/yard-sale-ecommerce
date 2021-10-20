@@ -21,6 +21,10 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .title {
   margin-bottom: 12px;
   text-align: center;
