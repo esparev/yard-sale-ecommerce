@@ -1,5 +1,10 @@
 .orders-container {
-  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 24px auto;
 }
 
 .order-summary {
@@ -38,7 +43,8 @@
   color: var(--very-light-pink);
 }
 
-.order-item__info--date {
+.order-item__info--date,
+.order-summary--title {
   font-weight: bold;
   font-size: var(--medium);
 }
@@ -61,4 +67,11 @@
 
 .order-item__more-info--button {
   margin-left: 20px;
+}
+
+@media (max-width: 700px) {
+  .orders-container {
+    width: auto;
+    margin: 24px;
+  }
 }
